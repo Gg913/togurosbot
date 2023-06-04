@@ -82,7 +82,7 @@ async function addReply(message) {
 
 const audioList = [
     {
-        keyword: "Em pleno 2022",
+        keyword: "Em pleno 2023",
         audioUrl:
             "https://www.myinstants.com/media/sounds/toguro-motivacional.mp3",
     },
@@ -312,8 +312,8 @@ async function start(message) {
         return;
     }
     const firstName = message.from.first_name;
-    const message_start_dev = `Olá, <b>${firstName}</b>! Você é um dos desenvolvedores 🧑‍💻\n\nVocê está no painel do desenvolvedor do Toguro, então aproveite a responsabilidade e use os comandos com consciências`;
-    const message_start = `Olá, <b>${firstName}</b>!\n\nEu sou <b>Toguro</b>, um bot que não gosta de ser chamado de bot kkkkk e que envia mensagens, áudios e figurinhas. Aproveite as funções que eu tenho.\n\n👾 <b>Canal de figurinhas:</b> <a href="https://t.me/lbrabo">Clique aqui</a>\n\n<b>BTC:</b> <code>bc1qjxzlug0cwnfjrhacy9kkpdzxfj0mcxc079axtl</code>\n<b>ETH/USDT:</b> <code>0x1fbde0d2a96869299049f4f6f78fbd789d167d1b</code>`;
+    const message_start_dev = `Olá, <b>${firstName}</b>! Você é um dos desenvolvedores 🧑‍💻\n\nVocê está no painel do desenvolvedor do Rick, então aproveite a responsabilidade e use os comandos com consciências`;
+    const message_start = `Olá, <b>${firstName}</b>!\n\nEu sou <b>Rick</b>, um bot que não gosta de ser chamado de bot kkkkk e que envia mensagens, áudios e figurinhas. Aproveite as funções que eu tenho.\n\n👾 <b>Canal de figurinhas:</b> <a href="https://t.me/mdzup">Clique aqui</a>\n\n<b>Dev:</b> <code>@gringomdz</code>\n<b>Pix:</b> <code>EmBreve</code>`;
     const options_start = {
         parse_mode: "HTML",
         disable_web_page_preview: true,
@@ -322,23 +322,23 @@ async function start(message) {
                 [
                     {
                         text: "✨ Adicione-me em seu grupo",
-                        url: "https://t.me/togurosbot?startgroup=true",
+                        url: "https://t.me/MdzMultBOT?startgroup=true",
                     },
                 ],
                 [
                     {
                         text: "📬 Canal Oficial",
-                        url: "https://t.me/togurovisao",
+                        url: "https://t.me/mdzup",
                     },
                     {
                         text: "👨‍💻 Suporte",
-                        url: "https://t.me/kylorensbot",
+                        url: "https://t.me/gringomdz",
                     },
                 ],
                 [
                     {
-                        text: "📦 Github",
-                        url: "https://github.com/leviobrabo/togurosbot",
+                        text: "📦 Musica",
+                        url: "https://t.me/MdzMusicBOT",
                     },
                 ],
             ],
@@ -351,18 +351,18 @@ async function start(message) {
             inline_keyboard: [
                 [
                     {
-                        text: "📦 Github",
-                        url: "https://github.com/leviobrabo/togurosbot",
+                        text: "📦 Github(confia)",
+                        url: "https://t.me/mdzup",
                     },
                 ],
                 [
                     {
                         text: "📬 Canal Oficial",
-                        url: "https://t.me/togurovisao",
+                        url: "https://t.me/mdzup",
                     },
                     {
                         text: "👨‍💻 Suporte",
-                        url: "https://t.me/kylorensbot",
+                        url: "https://t.me/gringomdz",
                     },
                 ],
                 [
@@ -593,18 +593,18 @@ async function saveNewChatMembers(msg) {
 
             bot.sendMessage(
                 chatId,
-                "Olá, me chamo o Toguro! Obrigado por me adicionado em seu grupo. Eu responderei a mensagem da galera no grupo kkkkk.",
+                "Olá, me chamo o Rick! Obrigado por me adicionado em seu grupo. Eu responderei a mensagem da galera no grupo kkkkk.",
                 {
                     reply_markup: {
                         inline_keyboard: [
                             [
                                 {
                                     text: "Visite nosso canal",
-                                    url: "https://t.me/togurovisao",
+                                    url: "https://t.me/mdzup",
                                 },
                                 {
                                     text: "Relate bugs",
-                                    url: "https://t.me/kylorensbot",
+                                    url: "https://t.me/gringomďz",
                                 },
                             ],
                         ],
@@ -707,7 +707,7 @@ async function ban(message) {
     } else {
         chatUsername = "Private Group";
     }
-    const banMessage = `#Togurosbot #Banned
+    const banMessage = `#Rick #Banned
     <b>Group:</b> ${chat.chatName}
     <b>ID:</b> <code>${chatId}</code>
     <b>Dev:</b> ${chatUsername}`;
@@ -774,7 +774,7 @@ async function unban(message) {
     } else {
         devUsername = "Private Group";
     }
-    const banMessage = `#Togurosbot #Unban
+    const banMessage = `#Rick #Unban
     <b>Group:</b> ${chat.chatName}
     <b>ID:</b> <code>${chatId}</code>
     <b>Dev:</b> ${devUsername}`;
